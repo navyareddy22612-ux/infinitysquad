@@ -1,0 +1,106 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.row {
+    display: flex;
+    gap: var(--space-md);
+    width: 100%;
+}
+
+.inputGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.inputGroup label {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.inputGroup select,
+.inputGroup input {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    width: 100%;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: var(--space-md);
+}
+
+.timelineItem {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.dateCol {
+    width: 80px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.dayCount {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.dateText {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.marker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: var(--primary);
+    border-radius: 50%;
+    margin-top: 6px;
+    z-index: 2;
+}
+
+.line {
+    width: 2px;
+    flex: 1;
+    background: var(--border);
+    min-height: 60px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    gap: var(--space-md);
+    padding-bottom: var(--space-lg);
+}
+
+.iconBox {
+    color: var(--text-secondary);
+}
+
+.content h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}

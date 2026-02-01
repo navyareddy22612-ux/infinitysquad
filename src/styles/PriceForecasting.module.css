@@ -1,0 +1,87 @@
+.marketCard {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-lg);
+}
+
+.location {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.priceTag {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    color: var(--success);
+    font-weight: 600;
+    font-size: 0.85rem;
+    background: #D1FAE5;
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    margin-top: 4px;
+}
+
+.chartContainer {
+    margin: var(--space-xl) 0;
+    font-size: 0.85rem;
+    height: 300px;
+}
+
+.recommendation {
+    background: linear-gradient(to right, #FFFBEB, #FFFFFF);
+    border: 1px solid #FCD34D;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+}
+
+.recIcon {
+    background: var(--accent);
+    color: white;
+    padding: 10px;
+    border-radius: var(--radius-full);
+}
+
+.recommendation h4 {
+    color: #92400E;
+    margin-bottom: 4px;
+}
+
+.recommendation p {
+    color: #B45309;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}

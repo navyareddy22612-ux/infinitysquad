@@ -1,0 +1,210 @@
+.predictionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.selectWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.selectWrapper select {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    appearance: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: white;
+    font-size: 1rem;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 12px;
+    color: var(--primary);
+    pointer-events: none;
+}
+
+.chevron {
+    position: absolute;
+    right: 12px;
+    color: var(--text-secondary);
+    pointer-events: none;
+}
+
+.inputRow {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.inputGroup label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.inputGroup select,
+.inputGroup input {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    width: 100%;
+}
+
+.inputGroup select:focus,
+.inputGroup input:focus {
+    outline: 2px solid var(--primary);
+    border-color: transparent;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+    .summaryGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.summaryCard {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summaryCard label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.summaryCard .value {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 4px 0;
+}
+
+.subtext {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.highlight {
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.highlight label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.expense {
+    color: #DC2626;
+    border-color: #FECACA;
+    background: #FEF2F2;
+}
+
+.revenue {
+    color: #059669;
+    border-color: #A7F3D0;
+    background: #ECFDF5;
+}
+
+.breakdownSection {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.breakdownGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+    /* Vertically align chart and table */
+}
+
+@media (min-width: 768px) {
+    .breakdownGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xl);
+    }
+}
+
+.chartWrapper {
+    height: 300px;
+}
+
+.tableWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.costTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.costTable th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid var(--border);
+    color: var(--text-secondary);
+}
+
+.costTable td {
+    padding: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.totalRow td {
+    border-top: 2px solid var(--border);
+    border-bottom: none;
+    font-size: 1rem;
+    padding-top: 12px;
+}
+
+.text-right {
+    text-align: right;
+}

@@ -1,0 +1,146 @@
+.uploadArea {
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: var(--background);
+}
+
+.uploadArea:hover {
+    border-color: var(--primary);
+    background-color: var(--primary-light);
+}
+
+.uploadLabel {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.iconCircle {
+    background-color: white;
+    color: var(--primary);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-sm);
+    box-shadow: var(--shadow-sm);
+}
+
+.previewContainer {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    max-height: 300px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.previewImage {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.scanner {
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    box-shadow: 0 0 8px var(--primary);
+    animation: scan 1.5s infinite linear;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes scan {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.resultOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.resultBadge {
+    background: var(--danger);
+    color: white;
+    padding: 6px 12px;
+    border-radius: var(--radius-full);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.resultBox {
+    margin-top: var(--space-lg);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+}
+
+.severityTag {
+    background: #FEF3C7;
+    color: #92400E;
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.section {
+    margin-bottom: var(--space-md);
+}
+
+.section h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.section ul {
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.section li {
+    margin-bottom: 4px;
+}
+
+.text-green-500 {
+    color: var(--success);
+}
